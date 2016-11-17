@@ -8,8 +8,10 @@
 
 #footer {
   width: 100%;
-  margin-bottom: 0;
+  margin: 0;
   padding-left: 50px;
+  background-color: #606568;
+  color: white;
 }
 
 #footer span {
@@ -21,3 +23,25 @@
   list-style-type: none;
   margin-top: 20px;
 }
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 290px;
+  background-color: #02C39A;
+  margin-top: 40px;
+}
+
+.navbar-default {
+  background-color: #606568;
+  border: 0;
+}
+
+.navbar-default .navbar-brand { color: white }
