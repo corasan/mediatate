@@ -1,0 +1,6 @@
+PHASE II
+The difference between the images is that one of the images had a version number resulting in it being downloaded every time the page loads with a status of 200 (OK), and the second image was cached with a status 304 (not modified).
+To improve page load is better to cache the resources, this way the resource can be retrieved locally rather than downloading them every time a user visits a site.
+
+To make both images load with a version number we can assign a class to images and get all the images with the given class using 'querySelectorAll(class)', this will return an array containing all the images with the class that you want to get.
+Then we iterate over all the images with 'forEach(element, index)' function and assign a url + version number (using concatenation or string interpolation) to the 'src' property of the image.
