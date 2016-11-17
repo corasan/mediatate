@@ -100,14 +100,19 @@
       </div>
     </div>
 
-    <div class="jumbotron" id="form">
-      <form class="form-inline">
-        <div class="input-group">
-          <div class="input-group-addon">@</div>
-          <input name="email" class="form-control" type="email" id="email-form" placeholder="Email">
-        </div>
-        <button type="submit" class="btn btn-default">Sign up!</button>
-      </form>
+    <div class="jumbotron" id="form-container">
+      <div id="thank-you">
+        <span>Thank you for signing up!</span>
+      </div>
+      <div id="form">
+        <form class="form-inline" id="email-form">
+          <div class="input-group">
+            <div class="input-group-addon">@</div>
+            <input name="email" class="form-control" type="email" id="email-form" placeholder="Email">
+          </div>
+        </form>
+        <button class="btn btn-default" id="submit-form">Sign up!</button>
+      </div>
     </div>
 
     <div id="footer" class="jumbotron">
@@ -128,5 +133,6 @@
     </script>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
