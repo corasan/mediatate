@@ -1,7 +1,7 @@
 window.onload = (() => {
   // delayer();
   images();
-  testGroup();
+  // testGroup();
   submitForm();
 });
 
