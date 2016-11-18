@@ -7,7 +7,7 @@ A repository for hosting coding challenges.
 Please clone this repository to your personal Github account.
 
 ## Phase II
-
+- [x] **Phase II**
 There are two images that are identical, though they are identified to the DOM with separate ids.
 
 1. What is the difference between these two images?
@@ -15,7 +15,7 @@ There are two images that are identical, though they are identified to the DOM w
 3. What can be done to make these images load correctly with a version number?
 
 ## Phase II
-
+- [x] **Phase II**
 This page makes a good candidate for using the Bootstrap framework.  Please do the following:
 
 1. Load the Bootstrap framework
@@ -29,7 +29,7 @@ This page makes a good candidate for using the Bootstrap framework.  Please do t
 3. Make it possible to allow a user to "Like" or "Thumbs-up" an image in the slideshow?  This does not require integrating with any third-party services like Facebook and does not need to be saved into a database.
 
 ## Phase IV
-
+- [x] **Phase IV**
 Observer employs lots of experiments to measure how users interact with page elements.
 
 Conceive of an experiment that you would like to run on this page.  You should conceive of only 1 test.
@@ -40,7 +40,7 @@ Using Javascript, demonstrate the ability to do the following:
 2. Based on this value, render the page appropriately for the test.
 
 ## Phase V
-
+- [x] **Phase V**
 Please notice there's a form near the bottom of the page where users are invited to enter an email address and submit it.  In other words, users are being asked to sign up for something!)
 
 1. Use Javascript to validate that a user types in an email address
@@ -52,4 +52,3 @@ Please notice there's a form near the bottom of the page where users are invited
 Once you've completed the Phases, please push to your repository.  Add a file answers.txt that provides the written responses to any questions above.
 
 Deploy your results to Github Pages and let's review it together!
-
