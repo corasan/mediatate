@@ -40,37 +40,27 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-12" id="x">
+        <div class="slides">
+          <img class="images" id="image-1" src="https://s-media-cache-ak0.pinimg.com/736x/4b/fe/44/4bfe443c1db09c0943de27164783e4fc.jpg">
+          <img class="images" id="image-2" src="https://nomad-nomadpictures.netdna-ssl.com/wp-content/uploads/2016/01/food-on-a-plate-819x1024.jpg">
+          <img class="images" id="image-3" src="https://s-media-cache-ak0.pinimg.com/736x/4b/fe/44/4bfe443c1db09c0943de27164783e4fc.jpg">
+          <img class="images" id="image-4" src="https://nomad-nomadpictures.netdna-ssl.com/wp-content/uploads/2016/02/coffee-on-wood-table-682x1024.jpg">
+        </div>
+        <div class="col-md-12">
           <div class="panel panel-default" id="slider">
             <div class="panel-body" id="mask">
-              <ul>
-                <li class="firstanimation">
-                  <img class="images" id="image-1">
-                  <a class="like">like</a>
-                </li>
-                <li class="secondanimation">
-                  <img class="images" id="image-2">
-                  <a class="like">like</a>
-                </li>
-                <li class="thirdanimation">
-                  <img class="images" id="image-3">
-                  <a class="like">like</a>
-                </li>
-                <li class="fourthanimation">
-                  <img class="images" id="image-4">
-                  <a class="like">like</a>
-                </li>
-                <li class="fifthanimation">
-                  <img class="images" id="image-5">
-                  <a class="like">like</a>
-                </li>
-              </ul>
-            </div>
-            <!-- <div class="panel-footer">
-              <div id="image-1-caption">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ullamcorper ante. Quisque sit amet mauris facilisis, placerat nisl finibus, euismod felis. </p>
+              <div class="slideShow">
+                <img id="show-slide" align="middle">
               </div>
-            </div> -->
+            </div>
+            <div class="panel-footer">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" id="next-slide"></span>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" id="previous-slide"></span>
+
+              <!-- <div id="image-1-caption">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ullamcorper ante. Quisque sit amet mauris facilisis, placerat nisl finibus, euismod felis. </p>
+              </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -117,7 +107,7 @@
             <input name="email" class="form-control" type="email" id="email-form" placeholder="Email" style="width:100%; height:50px; font-size: 24px">
           </div>
         </form>
-        <button class="btn btn-default" style="height: 50px; margin-left: 12px">Sign up!</button>
+        <button class="btn btn-default" style="height: 50px; margin-left: 12px" id="submit-form">Sign up!</button>
       </div>
     </div>
 

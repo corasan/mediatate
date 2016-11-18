@@ -1,5 +1,7 @@
-.images {
+#show-slide {
   width: 100%;
+  align-items: center;
+  max-height: 456px;
 }
 
 .container {
