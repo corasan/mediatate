@@ -53,6 +53,11 @@ slideShow = (num) => {
   showSlide.src = images[current].src;
 }
 
+document.getElementById('thumbs-up').addEventListener('click', () => {
+  console.log('clicked');
+  alert(`You liked image ${current + 1}`);
+});
+
 // Functions from script tags
 const important = () => {
   delayer();
