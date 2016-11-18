@@ -4,6 +4,7 @@
     <title>Welcome to a Webpage</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body style="padding-top: 70px">
@@ -39,29 +40,29 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <img class="images" id="image-1">
+        <div class="col-md-12" id="x">
+          <div class="panel panel-default" id="slider">
+            <div class="panel-body" id="mask">
+              <ul>
+                <li class="firstanimation">
+                  <img class="images" id="image-1">
+                  <h1 class="like">
+                    like
+                  </h1>
+                </li>
+                <li class="secondanimation">
+                  <img class="images" id="image-2">
+                </li>
+                <li class="thirdanimation">
+                  <img class="images" id="image-3">
+                </li>
+              </ul>
             </div>
-            <div class="panel-footer">
+            <!-- <div class="panel-footer">
               <div id="image-1-caption">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ullamcorper ante. Quisque sit amet mauris facilisis, placerat nisl finibus, euismod felis. </p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <img class="images" id="image-1">
-            </div>
-            <div class="panel-footer">
-              <div id="image-2-caption">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ullamcorper ante. Quisque sit amet mauris facilisis, placerat nisl finibus, euismod felis. </p>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
