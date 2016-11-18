@@ -5,32 +5,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script>
-      function important() {
-        delayer();
-      }
-      window.onload = important;
-    </script>
-    <script>
-      function sleep(milliseconds) {
-        var start = new Date().getTime();
-        for (var i = 0; i < 1e7; i++) {
-          if ((new Date().getTime() - start) > milliseconds){
-            break;
-          }
-        }
-      }
-      function delayer() {
-        sleep(7000);
-      }
-    </script> -->
   </head>
   <body style="padding-top: 70px">
-    <script>
-      // sleep(7000);
-      //alert("hoho");
-    </script>
-
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -38,6 +14,28 @@
         </div>
       </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Control Group</h4>
+          </div>
+          <div class="modal-body">
+            When this modal shows up it means you got randomly selected to be part of the Control group. The Control group does the following to the user experience:
+            <br/><br/>
+            * The form for email sign up is hidden.<br/>
+            * This modal appears.</br/>
+            <br/><br/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row">
@@ -66,8 +64,6 @@
             </div>
           </div>
         </div>
-
-
       </div>
 
       <div class="row">
@@ -127,35 +123,6 @@
       </ul>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Control Group</h4>
-          </div>
-          <div class="modal-body">
-            <br/><br/>
-            This modal showed up because you are part of the Control user group.
-            <br/><br/>
-          </br/>
-
-          </br/>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script language="javascript" type="text/javascript">
-      let url = "https://s-media-cache-ak0.pinimg.com/736x/4b/fe/44/4bfe443c1db09c0943de27164783e4fc.jpg";
-      let d = new Date();
-      document.querySelectorAll(".images").forEach((image, i) => {
-        image.src = `${url}?ver=${i + '-' + d.getTime()}`
-      });
-    </script>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
