@@ -2,16 +2,24 @@
   width: 100%;
 }
 
+.container {
+  width: 90%
+}
+
 .panel-body {
   padding: 0;
+}
+
+.panel-footer {
+  font-style: italic;
 }
 
 #footer {
   width: 100%;
   margin: 0;
-  padding-left: 50px;
   background-color: #606568;
   color: white;
+  text-align: center;
 }
 
 #footer span {
@@ -22,11 +30,18 @@
 #footer ul {
   list-style-type: none;
   margin-top: 20px;
+  padding-left: 0
 }
 
 #footer a {
   color: white;
   text-decoration: none;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#footer li {
+  display: inline-block;
 }
 
 #form-container {
@@ -34,6 +49,10 @@
   margin: 0;
   background-color: #02C39A;
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
 }
 
@@ -44,7 +63,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 80%;
 }
 
 #thank-you {
