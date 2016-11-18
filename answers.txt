@@ -1,6 +1,31 @@
-PHASE II
-The difference between the images is that one of the images had a version number resulting in it being downloaded every time the page loads with a status of 200 (OK), and the second image was cached with a status 304 (not modified).
-To improve page load is better to cache the resources, this way the resource can be retrieved locally rather than downloading them every time a user visits a site.
+ANSWERS
 
-To make both images load with a version number we can assign a class to images and get all the images with the given class using 'querySelectorAll(class)', this will return an array containing all the images with the class that you want to get.
-Then we iterate over all the images with 'forEach(element, index)' function and assign a url + version number (using concatenation or string interpolation) to the 'src' property of the image.
+PHASE II
+
+The difference between the images is that one of the images had a version number resulting
+in it being downloaded every time the page loads with a status of 200 (OK), and the second
+image was cached with a status 304 (not modified).To improve page load is better to cache
+the resources, this way the resource can be retrieved locally rather than downloading them
+every time a user visits a site.
+
+To make both images load with a version number we can assign a class to images and get all
+the images with the given class using 'querySelectorAll(class)', this will return an array
+containing all the images with the class that you want to get. Then we iterate over all the
+images with 'forEach(element, index)' function and assign a url + version number (using
+concatenation or string interpolation) to the 'src' property of the image.
+
+PHASE III
+
+Yes it does matter where you load the CSS. Lets say I have two css files, A and B. I want to override the styles
+of A from my B file, but I imported B before A; The changes I made in B will not override A because
+A was the last one to be read, therefore, the styles in A are prioritized.
+
+Something you can do is to use !important the style properties you want to change
+(ex: color: blue !important;) or simply import the file where you are overriding the styles
+as the last one.
+
+How you load the css also matters. CSS blocks in html make the file size bigger resulting
+in slow page load but no extra HTTP requests. Inline styles no extra HTTP requests but
+the styles are not reusable. External css files reduces files size, reusable styles, ability to cache
+files which means less load time. Each one has more advantages and disadvantages than the ones I
+mentioned but it all depends in what type of project you are doing.
