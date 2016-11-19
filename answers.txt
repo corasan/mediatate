@@ -24,8 +24,8 @@ Something you can do is to use !important the style properties you want to chang
 (ex: color: blue !important;) or simply import the file where you are overriding the styles
 as the last one.
 
-How you load the css also matters. CSS blocks in html make the file size bigger resulting
-in slow page load but no extra HTTP requests. Inline styles no extra HTTP requests but
-the styles are not reusable. External css files reduces files size, reusable styles, ability to cache
+How you load the css also matters. HTML style blocks: make the file size bigger resulting
+in slow page load but with no extra HTTP requests. Inline styles: no extra HTTP requests but
+the styles are not reusable. External css files: reduces files size, reusable styles, ability to cache
 files which means less load time. Each one has more advantages and disadvantages than the ones I
 mentioned but it all depends in what type of project you are doing.
