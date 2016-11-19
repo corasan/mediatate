@@ -21,13 +21,13 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Control Group</h4>
+            <h4 class="modal-title" id="myModalLabel">Variation Group</h4>
           </div>
           <div class="modal-body">
-            When this modal shows up it means you got randomly selected to be part of the Control group. The Control group does the following to the user experience:
-            <br/><br/>
-            * The form for email sign up is hidden.<br/>
-            * This modal appears.</br/>
+            You were chosen to be in the variation group. The variation group page renders:
+            <br/>
+            * Modal<br/>
+            * Slideshow</br/>
             <br/><br/>
           </div>
           <div class="modal-footer">
@@ -38,18 +38,18 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="control-group" style="display: none">
         <div class="col-md-12">
           <div class="panel panel-default">
-            <div class="panel-body">
-              <img class="images" id="image-1">
+            <div class="panel-body" style="padding: 0">
+              <img class="images" id="image-1" src="https://s-media-cache-ak0.pinimg.com/736x/4b/fe/44/4bfe443c1db09c0943de27164783e4fc.jpg">
             </div>
             <div class="panel-footer">
               <div id="image-1-caption">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ullamcorper ante. Quisque sit amet mauris facilisis, placerat nisl finibus, euismod felis. </p>
               </div>
               <div style="padding-left: 90%">
-                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="thumbs-up"></span>
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-1" style="left: 70%;color: black"></span>
               </div>
             </div>
           </div>
@@ -57,15 +57,46 @@
 
         <div class="col-md-12">
           <div class="panel panel-default">
-            <div class="panel-body">
-              <img class="images" id="image-1">
+            <div class="panel-body" style="padding: 0">
+              <img class="images" id="image-1" src="https://s-media-cache-ak0.pinimg.com/736x/4b/fe/44/4bfe443c1db09c0943de27164783e4fc.jpg">
             </div>
             <div class="panel-footer">
               <div id="image-2-caption">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ullamcorper ante. Quisque sit amet mauris facilisis, placerat nisl finibus, euismod felis. </p>
               </div>
               <div style="padding-left: 90%">
-                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="thumbs-up"></span>
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-2" style="left: 70%;color: black"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="variation-group" style="display: none">
+        <div class="slides">
+          <img class="slide-images" id="slide-image-1" src="http://68.media.tumblr.com/fbd4a8b1f08b49fad1262112a19c8686/tumblr_nmvtuaDpAe1u60tx6o1_1280.jpg">
+          <img class="slide-images" id="slide-image-2" src="http://68.media.tumblr.com/4f263cc67a79ab4553dd28e8d79ec1ae/tumblr_o3pb8nu4aQ1u60tx6o1_1280.jpg">
+          <img class="slide-images" id="slide-image-3" src="https://s3-us-west-1.amazonaws.com/realisticshots/2016/0237.jpg">
+          <img class="slide-images" id="slide-image-4" src="http://68.media.tumblr.com/ad55b34073a0259b509f04e2d190fe10/tumblr_nvnle3aonB1u60tx6o1_1280.jpg">
+        </div>
+        <div class="col-md-12">
+          <div class="panel panel-default" id="slider">
+            <div class="panel-body" id="mask">
+              <div class="slideShow">
+                <img id="show-slide" align="middle" style="height: 410px">
+              </div>
+              <div id="like">
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-slide" style="left: 70%;top: 24%;color: white"></span>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <div style="text-align:center">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" id="previous-slide"></span>
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" id="next-slide"></span>
+              </div>
+
+              <div id="image-caption">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ullamcorper ante. Quisque sit amet mauris facilisis, placerat nisl finibus, euismod felis. </p>
               </div>
             </div>
           </div>
@@ -114,7 +145,7 @@
             <input name="email" class="form-control" type="email" id="email-form" placeholder="Email" style="width:100%; height:50px; font-size: 24px">
           </div>
         </form>
-        <button class="btn btn-default" style="height: 50px; margin-left: 12px">Sign up!</button>
+        <button class="btn btn-default" style="height: 50px; margin-left: 12px" id="submit-form">Sign up!</button>
       </div>
     </div>
 
