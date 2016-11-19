@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.glyphicon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .container {
   width: 80%
 }

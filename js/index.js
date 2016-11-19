@@ -12,6 +12,11 @@ const submitForm = () => {
   });
 }
 
+document.getElementById('thumbs-up').addEventListener('click', () => {
+  console.log('clicked');
+  alert(`You liked this picture!`);
+});
+
 const testGroup = () => {
   const arr = ['Variation', 'Control'];
   const i = Math.round(Math.random());
