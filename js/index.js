@@ -1,7 +1,7 @@
 window.onload = (() => {
-  // delayer();
+  delayer();
   images();
-  // testGroup();
+  testGroup();
   submitForm();
 });
 
@@ -30,6 +30,11 @@ const images = () => {
     image.src = `${url}?ver=${i + '-' + d.getTime()}`
   });
 }
+
+document.getElementById('thumbs-up').addEventListener('click', () => {
+  console.log('clicked');
+  alert(`You liked this!`);
+});
 
 // Functions from script tags
 const important = () => {
