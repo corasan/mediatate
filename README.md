@@ -26,6 +26,7 @@ This page makes a good candidate for using the Bootstrap framework.  Please do t
 3. Ensure the page renders "responsively", for Desktop and Mobile
 
 ## Phase III
+- [x] **Phase III**
 
 1. Using the inline CSS, make a slideshow out of the images.
 2. Does where you load the CSS matter?  Please explain.

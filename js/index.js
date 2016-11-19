@@ -4,9 +4,9 @@ const previousSlide = document.getElementById('previous-slide');
 const showSlide = document.getElementById('show-slide');
 
 window.onload = (() => {
-  // delayer();
   loadImages();
-  // testGroup();
+  important();
+  testGroup();
   showSlide.src = images[0].src
 });
 
@@ -22,7 +22,7 @@ const testGroup = () => {
   const group = arr[i];
 
   if(group === 'Control') {
-    document.getElementById('myModal').modal('show');
+    $('#myModal').modal('show');
     document.getElementById('form-container').style.display='none';
   }
 }
